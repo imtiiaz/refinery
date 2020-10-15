@@ -1,0 +1,546 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Responsive Landing Page Template  
+    Template URI: http://demo.com
+    Description: This is html5 template
+    Author: imtiaz
+    Author URI: http://demo.com
+    Version: 1
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Template default css
+    2. Header Section
+    3. Slider Section
+    4. Service Section 
+    5. About Section
+    6. Career Section
+    7. Testimonials Section
+    8. Subscribe Section 
+    9. Pricing Section
+    10. Counter Section
+    11. Footer Section
+    12. Scrollup
+    13. Blog details
+    
+    
+-----------------------------------------------------------------------------------*/
+
+
+/* 1.---------------------------------------------
+                Template default css
+------------------------------------------------*/
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('../fontfamily/georgia/Georgia.ttf');
+}
+
+@font-face {
+    font-family: 'Brown Bold';
+    src: url('../fontfamily/brown/Brown Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Brown Regular';
+    src: url('../fontfamily/brown/BrownMedium Regular.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    color: #333;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    outline: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Georgia', sans-serif;
+    font-size: 17px;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+
+.btn.focus,
+.btn:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.brand_color {
+    color: #ef4b4b;
+}
+
+.brand_bg {
+    background: #ef4b4b;
+}
+
+
+/* 2.-------------------------------------------
+                    Header SectionSection
+-----------------------------------------------*/
+
+.navbar-toggler {
+    margin: 5px 0;
+}
+
+.navbar-toggler i {
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.main_menu {
+    background: #333;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Brown Bold', sans-serif;
+    letter-spacing: 4px;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    transition: all linear .1s;
+    -webkit-transition: all linear .1s;
+    -moz-transition: all linear .1s;
+    -os-transition: all linear .1s;
+    -ms-transition: all linear .1s;
+    z-index: 1;
+    position: relative;
+}
+
+.navbar-nav .nav-item:nth-child(1) .nav-link:hover {
+    color: #ef4b4b;
+}
+
+.navbar-nav .nav-item:nth-child(2) .nav-link:hover {
+    color: #e5059a;
+}
+
+.navbar-nav .nav-item:nth-child(3) .nav-link:hover {
+    color: #fa9d0d;
+}
+
+.navbar-nav .nav-item:nth-child(4) .nav-link:hover {
+    color: #1468e1;
+}
+
+
+.navbar-nav .nav-item .nav-link:before {
+    position: absolute;
+    content: "\f078";
+    font-family: 'Font Awesome 5 free';
+    font-weight: 700;
+    font-size: 14px;
+    color: #6f6767;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #ef4b4b
+}
+
+.navbar-nav .nav-item .nav-link.active:after {
+    opacity: 1;
+
+
+}
+
+.navbar-nav .nav-item .nav-link:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    opacity: 0;
+    background: #ef4b4b;
+    z-index: -1;
+    transition: all linear .1s;
+    -webkit-transition: all linear .1s;
+    -moz-transition: all linear .1s;
+    -os-transition: all linear .1s;
+    -ms-transition: all linear .1s;
+}
+
+.navbar-nav .nav-item .nav-link:hover:after {
+    opacity: 1;
+}
+
+.navbar-nav .nav-item:nth-child(2) .nav-link:hover:after {
+    background: #e5059a;
+}
+
+.navbar-nav .nav-item:nth-child(3) .nav-link:hover:after {
+    background: #fa9d0d;
+}
+
+.navbar-nav .nav-item:nth-child(4) .nav-link:hover:after {
+    background: #1468e1;
+}
+
+.country {
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'Brown', sans-serif;
+    padding: 20px 30px;
+    margin-right: 40px;
+    position: relative;
+}
+
+.country h4 {
+    font-size: 14px;
+    letter-spacing: .05em;
+    position: relative;
+
+}
+
+.country h4:after {
+    position: absolute;
+    content: "\f078";
+    font-family: 'Font Awesome 5 free';
+    font-weight: 700;
+    font-size: 14px;
+    color: #6f6767;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%)
+}
+
+.country ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35px;
+    background: #000;
+    text-align: center;
+    padding: 20px 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -os-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+
+}
+
+.country:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.country ul li {
+    padding: 6px 0;
+
+}
+
+.country ul li a {
+    font-size: 12px;
+    letter-spacing: .1em;
+    color: #fff;
+}
+
+.search a i {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+/* 3.-------------------------------------------
+                    Matching Section
+-----------------------------------------------*/
+.start_from p {
+    font-size: 12px;
+    font-family: 'Brown Regular';
+    font-weight: 400;
+    letter-spacing: .05em;
+    line-height: 1.3em;
+    font-style: italic;
+    color: #787679;
+
+
+}
+
+.start_from p span {
+    font-style: normal;
+    position: relative;
+}
+
+.start_from p span:after {
+    position: absolute;
+    content: '\f105';
+    font-family: 'Font Awesome 5 free';
+    font-weight: 700;
+    font-size: 12px;
+    color: #6f6767;
+    top: 50%;
+    right: -12px;
+    ;
+    transform: translateY(-50%);
+
+}
+
+.matching_head h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    font-weight: 700;
+    word-spacing: normal;
+    letter-spacing: -.02em;
+    line-height: 1.3em;
+    text-transform: none;
+    padding: 0 30px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.contributor a {
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-size: 12px;
+    color: #787679;
+}
+
+.last_update p {
+    font-size: 12px;
+    color: #787679;
+    font-family: 'Brown Regular', sans-serif;
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+
+.last_update p a {
+    font-size: 12px;
+    color: #787679;
+    text-decoration: underline;
+}
+
+.social a i {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+    -webkit-transition: background-color .1s ease-in-out;
+    transition: background-color .1s ease-in-out;
+}
+
+.social a i.fa-facebook-f {
+    background: #3b5998;
+}
+
+.social a i.fa-facebook-f:hover {
+    background: #5573b2;
+}
+
+.social a i.fa-pinterest-p {
+    background: #cb2027;
+}
+
+.social a i.fa-pinterest-p:hover {
+    background: #e53a41;
+}
+
+.social a i.fa-envelope {
+    background: #a0d7d5;
+}
+
+.social a i.fa-envelope:hover {
+    background: #baf1ef;
+}
+
+.content p {
+    font-family: 'Georgia', sans-serif;
+    font-size: 17px;
+    line-height: 1.5em;
+    color: #333;
+    margin-right: 20px;
+
+}
+
+.content p a {
+    border-bottom: 2px solid #27ffbc;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.content p a:hover {
+    border-bottom: 2px solid #ef4b4b;
+    line-height: 1;
+}
+
+.slider_nav {
+    background: #f5f5f5;
+    border-bottom: 1px solid #dcdcdc;
+    height: 50px;
+
+
+}
+
+.slider_nav a {
+    font-family: 'Brown', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #333;
+    letter-spacing: .05em;
+    line-height: 1.3em;
+    word-spacing: normal;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.slider_nav a:first-child {
+    /*
+    padding-left: 50px;
+    padding-right: 205px;
+*/
+
+}
+
+.slider_nav a:nth-child(2) {
+    background: #333;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.slide_img {
+    position: relative;
+    background: #f5f5f5;
+}
+
+.slide_img img {
+    max-height: 500px;
+    margin: 0 auto;
+}
+
+.slide_img .social {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+.slideshow_wrapper i.fas.fa-chevron-right.slick-arrow {
+    position: absolute;
+    top: 0;
+    right: 190px;
+    z-index: 11;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+
+}
+
+.slideshow_wrapper i.fas.fa-chevron-left.slick-arrow {
+    position: absolute;
+    top: 0;
+    right: 680px;
+    z-index: 11;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+
+}
+
+/* 5.-------------------------------------------
+                    Skills Section
+-----------------------------------------------*/
+
+
+/* 6.-------------------------------------------
+                    About Section
+-----------------------------------------------*/
+
+
+/* 7.-------------------------------------------
+                    About Section
+-----------------------------------------------*/
+
+
+/* 8.-------------------------------------------
+                    About Section
+-----------------------------------------------*/
+
+
+/* 9.-------------------------------------------
+                    About Section
+-----------------------------------------------*/
