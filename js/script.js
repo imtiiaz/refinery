@@ -72,7 +72,15 @@ $(function () {
             speed: 1000,
             prevArrow: '<i class="fas fa-chevron-left"></i>',
             nextArrow: '<i class="fas fa-chevron-right"></i>',
-    
+             responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 3,
+                  
+                }
+    },
+  ]
         });
 
 
